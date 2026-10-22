@@ -1,0 +1,1 @@
+{"version":3,"names":["AirBuild","default","AirBuildCodePush","getNativeAirBuild","getNativeAirBuildOrNull"],"sourceRoot":"../../src","sources":["index.ts"],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,SAASA,QAAQ,QAAQ,YAAY;AAErC,SAASC,OAAO,QAAQ,YAAY;AACpC,SAASC,gBAAgB,QAAQ,YAAY;AAc7C,SACEC,iBAAiB,EACjBC,uBAAuB,QAClB,kBAAkB","ignoreList":[]}

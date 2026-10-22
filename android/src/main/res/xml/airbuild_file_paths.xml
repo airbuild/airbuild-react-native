@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Allows the FileProvider to share files from the app's cache directory.
+         The downloaded APK is stored in cacheDir and shared with the system
+         package installer via a content:// URI on Android 7+. -->
+    <cache-path name="airbuild_cache" path="." />
+
+</paths>

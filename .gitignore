@@ -1,0 +1,10 @@
+# React Native SDK
+node_modules/
+dist/
+build/
+*.log
+.idea/
+.vscode/
+.DS_Store
+coverage/
+.yarn/

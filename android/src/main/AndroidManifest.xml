@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required for downloading APK updates -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Required to trigger the system package installer -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application>
+
+        <!-- FileProvider for sharing the downloaded APK with the system installer.
+             Required for Android 7+ (API 24+) where file:// URIs cannot be exposed
+             across process boundaries. -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.airbuild.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/airbuild_file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
