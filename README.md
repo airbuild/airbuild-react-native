@@ -69,14 +69,12 @@ import { AirBuild } from '@airbuild/react-native';
 
 AirBuild.configure({
   distributionKey: 'dk_a1b2c3d4e5f6',  // public, per-app, non-secret
-  // baseUrl: 'https://airbuild.dev',  // optional, defaults to airbuild.dev
 });
 ```
 
 | Option             | Type     | Required | Default                | Description                                            |
 | ------------------ | -------- | -------- | ---------------------- | ------------------------------------------------------ |
 | `distributionKey`  | string   | Yes      | -                      | Your app's distribution key (starts with `dk_`)        |
-| `baseUrl`          | string   | No       | `https://airbuild.dev` | Base URL of the AirBuild server (for self-hosted)      |
 
 ## Usage
 
