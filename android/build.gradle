@@ -3,9 +3,20 @@ buildscript {
     google()
     mavenCentral()
   }
+  // The Kotlin plugin must be on this module's own buildscript classpath —
+  // subproject buildscripts do not inherit the app's classpath. Without it
+  // `apply plugin: 'kotlin-android'` fails to resolve, and without the
+  // plugin the .kt sources silently never compile, producing an empty AAR.
+  def airbuildKotlinVersion = rootProject.ext.has('kotlinVersion')
+      ? rootProject.ext.get('kotlinVersion')
+      : '2.0.21'
+  dependencies {
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$airbuildKotlinVersion"
+  }
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
   namespace "dev.airbuild.reactnative"

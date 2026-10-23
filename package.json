@@ -1,6 +1,6 @@
 {
   "name": "@airbuild/react-native",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "AirBuild Distribution SDK for React Native. Check for new binary builds from AirBuild install links and prompt testers to install them, plus CodePush telemetry for OTA updates.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",

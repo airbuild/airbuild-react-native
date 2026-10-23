@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1
+
+### Fixed
+- Android: `android/build.gradle` now applies `kotlin-android` (with the
+  Kotlin plugin on the module's own buildscript classpath). Previously the
+  Kotlin sources silently never compiled, producing an AAR without
+  `AirBuildPackage`/`AirBuildModule` — every consumer failed at build time
+  with `cannot find symbol: class AirBuildPackage`.
+
 ## 0.2.0
 
 ### Added
